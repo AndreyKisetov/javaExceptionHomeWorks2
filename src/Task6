@@ -1,0 +1,12 @@
+                Задание 2
+int d = 0;
+try {
+    int catchRes1 = intArray[8] / d;
+    System.out.println("catchRes1 = " + catchRes1);
+} catch (IndexOutOfBoundsException ex) {
+    System.out.println("Выходит за пределы массива");
+} catch (ArithmeticException e) {
+    System.out.println("Catching exception: " + e);
+} finally {
+    System.out.println("Выполнился");
+}
